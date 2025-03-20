@@ -18,13 +18,19 @@ Swift를 활용하여 터미널에서 실행되는 숫자 야구 게임을 구�
 ## 프로젝트 구조 (로 하고 싶어요)
 
 ```
- NumberBaseball/
-├──  Sources/
-│   ├── main.swift        # 메인 실행 파일
-│   ├── GameLogic.swift   # 게임 로직 구현
-│   ├── InputHandler.swift # 사용자 입력 처리
-│   ├── ScoreManager.swift # 점수 및 기록 관리
-├── README.md
+NumberBaseball/
+├── Sources/                   # 주요 소스 코드 디렉토리
+│   ├── main.swift                # 게임 실행 파일
+│   ├── GameManager.swift         # 게임 진행 관리
+│   ├── RandomNumberGenerator.swift  # 랜덤 숫자 생성
+│   ├── UserInputHandler.swift    # 사용자 입력 처리
+│   ├── StrikeBallChecker.swift   # 스트라이크 & 볼 판정
+│   ├── Utils.swift               # 공통 유틸리티 (입력 검증 함수)
+│
+├── Resources/                 # (필요 시) 게임 관련 데이터 저장
+├── 📄 README.md                   # 프로젝트 개요 및 실행 방법 설명
+├── 📄 .gitignore                   # Git 관리 제외 파일 설정
+├── 📄 numberBaseball.xcodeproj     # Xcode 프로젝트 파일
 ```
 
 ##  게임 진행 방식
