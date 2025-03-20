@@ -58,8 +58,11 @@ func generateRandomNumbers() -> [Int] {
 
 ```swift
 func isValidInput(_ input: String) -> Bool {
-    guard input.count == 3, input.allSatisfy({ $0.isNumber }), Set(input).count == 3 else {
-        return false
+    guard input.count == 3,
+      input.allSatisfy({ $0.isNumber }),
+      Set(input).count == 3
+    else {
+      return false
     }
     return true
 }
@@ -69,7 +72,7 @@ func isValidInput(_ input: String) -> Bool {
 - **중복된 숫자가 없는지 검사**
 - 잘못된 입력 시 다시 입력을 요청
 
-### ✅ 3. 스트라이크 & 볼 판정 (Lv2)
+### 3. 스트라이크 & 볼 판정 (Lv2)
 
 ```swift
 func getHint(secret: [Int], userInput: [Int]) -> (strike: Int, ball: Int) {
@@ -88,19 +91,7 @@ func getHint(secret: [Int], userInput: [Int]) -> (strike: Int, ball: Int) {
 - 같은 자리 같은 숫자 → **스트라이크** 증가
 - 다른 자리지만 포함된 숫자 → **볼** 증가
 
-### 4. 게임 종료 및 기록 관리 (Lv5)
-
-```swift
-var gameRecords: [Int] = []
-func addGameRecord(_ attempts: Int) {
-    gameRecords.append(attempts)
-}
-```
-
-- 게임이 끝날 때 **시도 횟수를 기록하여 저장**
-- 이전 게임 기록을 볼 수 있도록 기능 확장 예정
-
-## ⚙️ 실행 방법
+##  실행 방법
 
 1. Xcode에서 `main.swift`를 실행
 2. 터미널에서 **3자리 숫자를 입력**하며 게임 진행
@@ -117,6 +108,4 @@ git clone https://github.com/내GitHub계정/NumberBaseball.git
 cd NumberBaseball
 swift run
 ```
-
-✅ **게임을 즐기세요! ⚾️**
 
