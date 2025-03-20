@@ -7,15 +7,15 @@
 
 import Foundation
 
-class UserInputHandler {
+class UserInput {
     func getUserInput() -> String {
         while true {
             print("숫자를 입력하세요:")
-//            if let input = readLine(), InputValidator.isValidInput(input) {
-//                return input
-//            } else {
-//                print("!! 올바른 3자리 숫자를 입력해주세요.")
-//            }
+            if let input = readLine(), InputValidator.isValidInput(input) {
+                return input
+            } else {
+                print("!! 올바른 3자리 숫자를 입력해주세요.")
+            }
         }
     }
 }

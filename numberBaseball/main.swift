@@ -63,9 +63,7 @@ func getUserInput() -> String {
     }
 }*/
 
-/*
-// 테스트
-let userInput = getUserInput()
-print("사용자 입력값: \(userInput)")
 
-*/
+// 테스트
+let userInput = UserInput().getUserInput()
+print("사용자 입력값: \(userInput)")
