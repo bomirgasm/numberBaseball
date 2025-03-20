@@ -7,6 +7,7 @@
 
 import Foundation
 
+/*
 func generateRandomNumbers() -> [Int] {
     var numberSet = Set<Int>()
     
@@ -17,17 +18,19 @@ func generateRandomNumbers() -> [Int] {
     
     return Array(numberSet)                  // Set을 배열로 변환하여 반환
 }
-
-// 테스트
-let randomNumbers = generateRandomNumbers()
+*/
+let randomNumbers = RandomNumberGenerator().generateRandomNumbers()
 print("랜덤 숫자: \(randomNumbers)")
 
-print("3자리 숫자를 입력하세요:")
-if let input = readLine() {
+
+
+/*
+ print("3자리 숫자를 입력하세요:")
+if let input = readLine() {     
     print("입력한 값: \(input)")
-}
+}*/
 
-
+/*
 func isValidInput(_ input: String) -> Bool {
                                                 // 입력값이 정확히 3자리 숫자인지 확인
     guard input.count == 3,
@@ -37,6 +40,8 @@ func isValidInput(_ input: String) -> Bool {
     }
     return true
 }
+*/
+
 
 /*
 // 테스트
@@ -46,6 +51,7 @@ print(isValidInput("abc"))  // false (숫자가 아님)
 print(isValidInput("10"))   // false (3자리가 아님)
 */
 
+/*
 func getUserInput() -> String {
     while true {
         print("숫자를 입력하세요:")
@@ -55,9 +61,11 @@ func getUserInput() -> String {
             print("!! 올바른 3자리 숫자를 입력해주세요.")
         }
     }
-}
+}*/
 
+/*
 // 테스트
 let userInput = getUserInput()
 print("사용자 입력값: \(userInput)")
 
+*/
